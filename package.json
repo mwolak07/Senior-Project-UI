@@ -1,0 +1,23 @@
+{
+  "name": "senior-project-ui-2020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "electron-packager": "^14.2.1",
+    "node-gyp": "^7.0.0"
+  },
+  "dependencies": {
+    "node-addon-api": "^3.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Robot Arm Control</title>
+        <script src="arm_control_2.js"></script>
+        <link rel="stylesheet" href="stylesheet_2.css">
+    </head>
+    <body>
+        <h1>Robot Arm Control</h1>
+        <br>
+        <form name="armControl" action="" method="GET">
+            <h3>(x,y,z) Position in Centimeters</h3>
+            <br>
+            <label class="axisLabel" for="xAxis">X-Axis Position: </label>
+            <input type="range" id="xAxis" class="axisSlider" name="xAxis" min="0" max="160" value="80" onclick="updateText(this.form, 1)">
+            <input type="text" id="xAxisText" class="axisText" name="xAxisText" value="80">
+            <br>
+            <label class="axisLabel" for="yAxis">Y-Axis Position: </label>
+            <input type="range" id="yAxis" class="axisSlider" name="yAxis" min="0" max="160" value="80" onclick="updateText(this.form, 2)"> 
+            <input type="text" id="yAxisText" class="axisText" name="yAxisText" value="80">
+            <br>
+            <label class="axisLabel" for="zAxis">Z-Axis Position: </label>
+            <input type="range" id="zAxis" class="axisSlider" name="zAxis" min="0" max="160" value="80" onclick="updateText(this.form, 3)">
+            <input type="text" id="zAxisText" class="axisText" name="zAxisText" value="80">
+            <br>
+            <input type="button" id="moveButton" name="moveButton" value="Move" onclick="moveButtonClick(this.form)">
+        </form>
+    </body>
+</html>

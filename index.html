@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Robot Arm Control</title>
+        <script src="arm_control.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <h1>Robot Arm Control</h1>
+        <br>
+        <form name="armControl" action="" method="GET">
+            <label for="axis1" class="axisLabel">1st Axis</label><br>
+            <input type="range" id="axis1" class="axisSlider" name="axis1" min="0" max="364" step="1" value="182" onclick="updateText(this.form, 1)">
+            <input type="text" id="axisText1" class="axisText" name="axisText1" value="182">
+            <br>
+            <label for="axis2" class="axisLabel">2nd Axis</label><br>
+            <input type="range" id="axis2" class="axisSlider" name="axis2" min="0" max="364" step="1" value="182" onclick="updateText(this.form, 2)">
+            <input type="text" id="axisText2" class="axisText" name="axisText2" value="182">
+            <br>
+            <label for="axis3" class="axisLabel">3rd Axis</label><br>
+            <input type="range" id="axis3" class="axisSlider" name="axis3" min="0" max="364" step="1" value="182" onclick="updateText(this.form, 3)">
+            <input type="text" id="axisText3" class="axisText" name="axisText3" value="182">
+            <br>
+            <label for="axis4" class="axisLabel">4th Axis</label><br>
+            <input type="range" id="axis4" class="axisSlider" name="axis4" min="0" max="364" step="1" value="182" onclick="updateText(this.form, 4)">
+            <input type="text" id="axisText4" class="axisText" name="axisText4" value="182">
+            <br>
+            <label for="axis1" class="axisLabel">5th Axis</label><br>
+            <input type="range" id="axis5" class="axisSlider" name="axis5" min="0" max="364" step="1" value="182" onclick="updateText(this.form, 5)">
+            <input type="text" id="axisText5" class="axisText" name="axisText5" value="182">
+            <br>
+            <input type="button" id="moveButton" name="moveButton" value="Move" onclick="moveButtonClick(this.form)">
+        </form>
+    </body>
+</html>
