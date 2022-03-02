@@ -9,3 +9,12 @@ Details:
   - Selecting the correct index file in main.js will switch between the schemes
 - N_API used to interface with a C++ script that does basic operations. This is a proof of concept that information can be sent to and received from a C++ script.
 - The dummy C++ script takes the place of a C++ driver for the robotic arm, which is in development.
+
+Scheme 1:
+
+![Scheme 1](Scheme_1.png?raw=True "Scheme 1")
+
+
+Scheme 2:
+
+![Scheme 2](Scheme_2.png?raw=True "Scheme 2")
